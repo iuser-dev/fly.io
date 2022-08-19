@@ -8,7 +8,7 @@ processes = []
 [env]
 
 [[mounts]]
-destination = "/data"
+destination = "/var/lib/pgadmin"
 source = "data"
 
 [experimental]

@@ -6,4 +6,4 @@ set -ex
 
 source ./build.sh
 
-docker run --env-file env --rm -it $NAME:latest /bin/bash
+docker run --env-file env --rm -it $NAME:latest /bin/sh

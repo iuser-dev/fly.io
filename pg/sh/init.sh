@@ -6,7 +6,7 @@ set -ex
 
 NAME=ipg
 REGION=hkg
+flyctl volumes create data --no-encryption --region $REGION -s 1
 flyctl launch --name $NAME --region $REGION --no-deploy --remote-only
-flyctl volumes create data --no-encryption --region $REGION
 flyctl ips allocate-v4
 flyctl ips allocate-v6
